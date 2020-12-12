@@ -10,7 +10,6 @@ exports.GetItemSellBuyInfo = (req,res,next) => {
     }
 
     const config = apiConfig.createConfig('GetItemSellBuyInfo', formData)
-    console.log(config)
 
     request(config, function (err, response) {
         if (err) throw new Error(err)
